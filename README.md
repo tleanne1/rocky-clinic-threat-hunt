@@ -1,10 +1,16 @@
-# # LIVEHunt 07: Rocky Clinic – Threat Hunting & Incident Investigation
+# LIVEHunt 07: Rocky Clinic – Threat Hunting & Incident Investigation
+
+![Rocky Clinic Investigation](LIVEHunt07-RockyClinic.png)
+
+## Executive Summary
 ![Threat Hunting](https://img.shields.io/badge/Threat-Hunting-red)
 ![Microsoft Defender XDR](https://img.shields.io/badge/Microsoft-Defender_XDR-blue)
 ![KQL](https://img.shields.io/badge/KQL-Advanced_Hunting-green)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-orange)
 
-![Rocky Clinic Investigation](LIVEHunt07-RockyClinic.png)
+During this investigation, a threat actor collected data, staged an archive, attempted SCP-based exfiltration, pivoted to a Discord webhook after egress controls blocked the initial transfer, and then performed anti-forensics activities including selective log deletion and timestamp manipulation.
+
+The investigation leveraged Microsoft Defender XDR telemetry, KQL-based threat hunting, and MITRE ATT&CK mapping to reconstruct the full attack chain and identify successful defensive detections.
 
 Threat hunting and incident investigation of a multi-stage Linux intrusion involving SCP exfiltration, Discord webhook abuse, log tampering, timestomping, and MITRE ATT&amp;CK mapping using Microsoft Defender XDR and KQL.
 
